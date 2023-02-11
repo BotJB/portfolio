@@ -20,7 +20,7 @@ const [resume,setResume]=useState(null)
 const handleClick=()=>{
   const aTag=document.createElement('a')
    aTag.href=resume;
-   aTag.setAttribute('download','Resume.docx')
+   aTag.setAttribute('download','Resume.pdf')
    document.body.appendChild(aTag)
    aTag.click();
    aTag.remove();
@@ -28,7 +28,7 @@ const handleClick=()=>{
 
   useEffect(()=>{
     const storage=getStorage();
-   const Ref=ref(storage,'Resume.docx')
+   const Ref=ref(storage,'Resume.pdf')
 
    getDownloadURL(Ref).then((url)=>{
     setResume(url)
