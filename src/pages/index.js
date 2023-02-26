@@ -11,6 +11,7 @@ import { getStorage, ref, getDownloadURL } from "firebase/storage";
 import storage from 'utils/firebase'
 import { useEffect, useState } from 'react'
 import empporj from '../../public/empporj.png'
+import proj2 from '../../public/proj2.png'
 
 
 export default function Home() {
@@ -129,6 +130,15 @@ const handleClick=()=>{
         <Link href="https://dainty-alpaca-324216.netlify.app/">
         <Image src={empporj} className='mx-auto' />
         </Link>
+        
+        <h3 className=' text-lg text-center px-2 lg:text-2xl dark:text-gray-200 '>Online TODO App</h3>
+        <p className='text-lg m-8 dark:text-gray-200'>This project uses MERN stack. To use this app users need to either sign up or login using their 
+        credentials. It uses JWT for authentication. Users can make new tasks, edit the progress of old tasks, delete tasks and signout when done.Click on the image 
+        to check the live project.</p>
+        <Link href="https://splendorous-eclair-8708bd.netlify.app/">
+        <Image src={proj2} className='mx-auto' />
+        </Link>
+        
       </div>
     </section>
 
