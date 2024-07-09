@@ -2,6 +2,7 @@ import Head from 'next/head'
 import {BsFillMoonStarsFill,BsGithub,BsLinkedin,BsTwitter} from 'react-icons/bs'
 import Image from 'next/image'
 import jasjot from '../../public/jasjot.jpg'
+import disp from '../../public/disp.jpg'
 import frontend from '../../public/front-end.jpg'
 import api from '../../public/api.png'
 import others from '../../public/others.jpg'
@@ -58,7 +59,7 @@ const handleClick=()=>{
        <div className='flex justify-center text-center flex-col '>
         <h2 className='text-5xl p-2 text-cyan-500 font-medium dark:text-cyan-400 '>Jasjot Singh</h2>
         <h3 className='text-2xl p-2 md:text-3xl dark:text-white'>Full stack developer</h3>
-        <p className=' text-xl  leading-10 p-5 md:text-xl max-w-xl mx-auto dark:text-gray-200'>	A motivated individual with in-depth knowledge of languages and development tools, seeking a position in a growth-oriented company where I can use my skills to the advantage of the company while having the scope to develop my own skills.</p>
+        <p className=' text-xl  leading-10 p-5 md:text-xl max-w-xl mx-auto dark:text-gray-200'>	Welcome to my portfolio website! I am a dedicated full stack developer with a passion for technology and problem-solving. Currently, I am part of the FDM IDB pod, where I contribute to developing a cutting-edge banking app using the MERN stack. With deep knowledge in Java and Spring Boot, I bring a comprehensive skill set to every project. My experience also includes a year as a front-end developer at Web Allures, where I honed my skills in creating dynamic and user-friendly web applications. Additionally, I have conducted numerous technical presentations for clients like Wawanesa Insurance, TD Bank, and Intact, showcasing the latest advancements in our IDB app using the latest tools. Explore my portfolio to see the projects I've worked on and the skills I bring to the table.</p>
        <div className='text-5xl flex justify-center  gap-16 p-3 text-gray-800 dark:text-gray-400'>
         <Link href="https://github.com/BotJB">
        <BsGithub className=' cursor-pointer' />
@@ -70,15 +71,12 @@ const handleClick=()=>{
        </div>
        </div>
        <div className="mx-auto bg-gradient-to-b from-cyan-500 rounded-full w-80 h-80 relative overflow-hidden mt-20 md:h-96 md:w-96  ">
-              <Image src={jasjot} layout="fill" objectFit="cover" />
+              <Image src={disp} layout="fill" objectFit="cover" />
             </div>
        </section>
        <section>
         <h3 className='text-2xl p-2 text-center dark:text-white '>Services I can offer</h3>
-        <p className='text-xl  leading-10 p-5  dark:text-gray-200'>During my graduation and Web development course and personal projects i have acquired a lot of different skills.
-          I have experience working with core front end like Html, Css, Javascript and other technologies like React and Next js.
-          Alongside this I can also work on the backend side using Node Js or Java. I have a deep understanding of Data structres advantage
-          Algorithms.
+        <p className='text-xl  leading-10 p-5  dark:text-gray-200'>During my graduation, web development courses, and personal projects, I have developed a diverse skill set. I am experienced with core front-end technologies such as HTML, CSS, and JavaScript, and I have worked extensively with React and Next.js. Additionally, I am proficient in back-end development using Node.js, Java, and Spring Boot. I also have a deep understanding of data structures and algorithms. My journey includes working as a front-end developer at Web Allures for a year and currently contributing to the FDM IDB pod, where I work on a banking app using the MERN stack.
            </p>
            <div className=' lg:flex gap-10 '>
             <div className='text-center   shadow-lg p-10 rounded-xl my-10 mx-10 flex-1  dark:bg-white'>
@@ -88,9 +86,9 @@ const handleClick=()=>{
             <h3 className=' text-xl pb-4 '>Front End Tools</h3>
            <ul className=' text-gray-700 text-lg'>
             <li>HTML, CSS, Javascript</li>
-            <li>React,Next JS</li>
-            <li>State Management with Redux</li>
-            <li>Tailwind, React Icons</li>
+            <li>React,Redux,Next JS</li>
+            <li>Angular</li>
+            <li>Testing Using Jest,React testing library</li>
            </ul>
             </div>
             <div className='text-center   shadow-lg p-10 rounded-xl mx-10 my-10 flex-1  dark:bg-white'>
@@ -100,9 +98,9 @@ const handleClick=()=>{
             <h3 className=' text-xl pb-4 '>Back End and Database Tools</h3>
            <ul className=' text-gray-700 text-lg'>
             <li>Node Js, Express JS</li>
-            <li>Java</li>
+            <li>Java,Spring Boot</li>
             <li>Sql and NoSql Databases</li>
-            <li>GraphQl</li>
+            <li>GraphQl,Microservices</li>
            </ul>
             </div>
             <div className='text-center   shadow-lg p-10 rounded-xl my-10 mx-10 flex-1  dark:bg-white'>
@@ -113,7 +111,7 @@ const handleClick=()=>{
            <ul className=' text-gray-700 text-lg'>
             <li>Github</li>
             <li>Trello,Jira</li>
-            <li>Unit testing with Selenium</li>
+            <li>Postman,Swagger</li>
             <li>Agile and Waterfall development methods</li>
            </ul>
             </div>
@@ -124,18 +122,34 @@ const handleClick=()=>{
       <h1 className=' text-2xl text-center m-5 lg:text-5xl dark:text-white'>Projects</h1>
       <div className=' shadow-lg m-9 items-center'>
         <h3 className=' text-lg text-center lg:text-2xl dark:text-gray-200'>Employee Management System</h3>
-        <p className='text-lg m-8 dark:text-gray-200'>This project is built using the MERN stack it uses React for the front end and Node Js and Express Js for the 
-        backend and Mongo Db as the database. It is made fully responsive using React Bootstrap. We can add, edit, delete and filter employee data
-        . Click on the image to go the project </p>
-        <Link href="https://dainty-alpaca-324216.netlify.app/">
+        <p className='text-lg m-8 dark:text-gray-200'>This project is built using the MERN stack, utilizing React for the front end and Node.js with Express.js for the backend, and MongoDB as the database. It is fully responsive, thanks to React Bootstrap. To try it out click on the image </p>
+        <h5 className="text-xl font-semibold mb-4 pl-10">Key features</h5>
+<ul className="list-disc pl-10 space-y-2 mb-5">
+  <li className="text-sm text-gray-700">Built using MVC architecture</li>
+  <li className="text-sm text-gray-700">Add, edit, delete, and filter employee data</li>
+  <li className="text-sm text-gray-700">Export employee records in CSV format</li>
+  <li className="text-sm text-gray-700">Meaningful messages and error handling using React Toastify</li>
+</ul>
+        <Link href="https://668d5535dfc64487c4b8d9cf--glistening-meringue-1a9d85.netlify.app/">
         <Image src={empporj} className='mx-auto' />
         </Link>
         
         <h3 className=' text-lg text-center px-2 lg:text-2xl dark:text-gray-200 '>Online TODO App</h3>
-        <p className='text-lg m-8 dark:text-gray-200'>This project uses MERN stack. To use this app users need to either sign up or login using their 
-        credentials. It uses JWT for authentication. Users can make new tasks, edit the progress of old tasks, delete tasks and signout when done.Click on the image 
-        to check the live project.</p>
-        <Link href="https://splendorous-eclair-8708bd.netlify.app/">
+        <p className='text-lg m-8 dark:text-gray-200'>This project uses the MERN stack. To use this app, users need to either sign up or log in using their credentials. It uses session-based authentication. Users can make new tasks, edit the progress of old tasks, change the priority of tasks, delete tasks, and sign out when done. TO try it out click ont he image</p>
+        <h5 className="text-xl font-semibold mb-4 pl-10">Key features</h5>
+<ul className="list-disc pl-10 space-y-2 mb-5">
+  <li className="text-sm text-gray-700">Built using MVC architecture</li>
+  <li className="text-sm text-gray-700">Built using the MERN stack</li>
+  <li className="text-sm text-gray-700">Session-based authentication for secure access</li>
+  <li className="text-sm text-gray-700">Change the priority of tasks using sliders</li>
+  </ul>
+  <h5 className="text-xl font-semibold mb-4 pl-10">To try it out</h5>
+<ul className="list-disc pl-10 space-y-2 mb-5">
+  <li className="text-sm text-gray-700">Email: jj@hotmail.com</li>
+  <li className="text-sm text-gray-700">Password: Password@9</li>
+  <li className="text-sm text-gray-700">Or signup using your own email</li>
+  </ul>
+        <Link href="https://668d6ad98c3d50a6c966247c--vermillion-starship-034ece.netlify.app/">
         <Image src={proj2} className='mx-auto' />
         </Link>
         
