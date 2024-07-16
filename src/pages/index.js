@@ -45,29 +45,37 @@ const handleClick=()=>{
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className=' bg-white px-10 dark:bg-gray-900 md:px-20 lg:px-40'  >
+      <main className=" bg-white px-10 dark:bg-gray-900 md:px-20 lg:px-40"  >
         <section>
-       <nav className='flex p-5 justify-between mb-12 dark:text-white '>
-        <h1 className=' font-serif text-xl items-center'>Developed by Jasjot</h1>
-        <ul className='flex justify-between items-center'>
-          <li className=' text-xl cursor-pointer'><BsFillMoonStarsFill onClick={()=>setDarkMode(!darkMode)} /></li>
+       <nav className="flex p-5 justify-between mb-12 dark:text-white ">
+        <h1 className=" font-serif text-xl items-center">Developed by Jasjot</h1>
+        <ul className=" flex justify-between items-center">
+          <li className=" text-xl cursor-pointer"><BsFillMoonStarsFill onClick={()=>setDarkMode(!darkMode)} /></li>
         
-          <li className=' ml-4 bg-cyan-500 p-2 rounded-l cursor-pointer' onClick={handleClick}>Resume</li>
+          <li className=" ml-4 bg-cyan-500 p-2 rounded-l cursor-pointer" onClick={handleClick}>Resume</li>
           
         </ul>
        </nav>
-       <div className='flex justify-center text-center flex-col '>
-        <h2 className='text-5xl p-2 text-cyan-500 font-medium dark:text-cyan-400 '>Jasjot Singh</h2>
-        <h3 className='text-2xl p-2 md:text-3xl dark:text-white'>Full stack developer</h3>
-        <p className=' text-xl  leading-10 p-5 md:text-xl max-w-xl mx-auto dark:text-gray-200'>	Welcome to my portfolio website! I am a dedicated full stack developer with a passion for technology and problem-solving. Currently, I am part of the FDM IDB pod, where I contribute to developing a cutting-edge banking app using the MERN stack. With deep knowledge in Java and Spring Boot, I bring a comprehensive skill set to every project. My experience also includes a year as a front-end developer at Web Allures, where I honed my skills in creating dynamic and user-friendly web applications. Additionally, I have conducted numerous technical presentations for clients like Wawanesa Insurance, TD Bank, and Intact, showcasing the latest advancements in our IDB app using the latest tools. Explore my portfolio to see the projects I've worked on and the skills I bring to the table.</p>
-       <div className='text-5xl flex justify-center  gap-16 p-3 text-gray-800 dark:text-gray-400'>
+       <div className="flex justify-center text-center flex-col ">
+        <h2 className="text-5xl p-2 text-cyan-500 font-medium dark:text-cyan-400 ">Jasjot Singh</h2>
+        <h3 className="text-2xl p-2 md:text-3xl dark:text-white">Full stack developer</h3>
+        <p className="text-xl  leading-10 p-5 md:text-xl max-w-xl mx-auto dark:text-gray-200">	Welcome to my portfolio website!
+           I am a dedicated full stack developer with a passion for technology and problem-solving. Currently, I am part 
+           of the FDM IDB pod, where I contribute to developing a cutting-edge banking app using the MERN stack, 
+           including developing a REST API using Node.js. With deep knowledge in Java and Spring Boot, I bring a comprehensive
+            skill set to every project. My experience also includes a year as a front-end developer at Web Allures, where I 
+            honed my skills in creating dynamic and user-friendly web applications. Additionally, I have conducted numerous 
+            technical presentations for clients like Wawanesa Insurance, TD Bank, and Intact, showcasing the latest advancements
+             in our IDB app using the latest tools. Explore my portfolio to see the projects I've worked on and the skills I
+              bring to the table.</p>
+       <div className="text-5xl flex justify-center  gap-16 p-3 text-gray-800 dark:text-gray-400">
         <Link href="https://github.com/BotJB">
-       <BsGithub className=' cursor-pointer' />
+       <BsGithub className=" cursor-pointer" />
        </Link>
        <Link href="https://www.linkedin.com/in/jasjot-singh-4b7253260/">
-       <BsLinkedin className=' cursor-pointer' />
+       <BsLinkedin className=" cursor-pointer" />
        </Link>
-       <BsTwitter className=' cursor-pointer'/>
+       <BsTwitter className=" cursor-pointer"/>
        </div>
        </div>
        <div className="mx-auto bg-gradient-to-b from-cyan-500 rounded-full w-80 h-80 relative overflow-hidden mt-20 md:h-96 md:w-96  ">
@@ -76,7 +84,12 @@ const handleClick=()=>{
        </section>
        <section>
         <h3 className='text-2xl p-2 text-center dark:text-white '>Services I can offer</h3>
-        <p className='text-xl  leading-10 p-5  dark:text-gray-200'>During my graduation, web development courses, and personal projects, I have developed a diverse skill set. I am experienced with core front-end technologies such as HTML, CSS, and JavaScript, and I have worked extensively with React and Next.js. Additionally, I am proficient in back-end development using Node.js, Java, and Spring Boot. I also have a deep understanding of data structures and algorithms. My journey includes working as a front-end developer at Web Allures for a year and currently contributing to the FDM IDB pod, where I work on a banking app using the MERN stack.
+        <p className='text-xl  leading-10 p-5  dark:text-gray-200'>During my graduation, web development courses, and personal
+           projects, I have developed a diverse skill set. I am experienced with core front-end technologies such as HTML, CSS,
+            and JavaScript, and I have worked extensively with React and Next.js. Additionally, I am proficient in back-end 
+            development using Node.js, Java, and Spring Boot, and I am familiar with REST API architecture. I also have a deep
+             understanding of data structures and algorithms. My journey includes working as a front-end developer at Web Allures 
+             for a year and currently contributing to the FDM IDB pod, where I work on a banking app using the MERN stack.
            </p>
            <div className=' lg:flex gap-10 '>
             <div className='text-center   shadow-lg p-10 rounded-xl my-10 mx-10 flex-1  dark:bg-white'>
@@ -100,7 +113,7 @@ const handleClick=()=>{
             <li>Node Js, Express JS</li>
             <li>Java,Spring Boot</li>
             <li>Sql and NoSql Databases</li>
-            <li>GraphQl,Microservices</li>
+            <li>REST API and Microservices</li>
            </ul>
             </div>
             <div className='text-center   shadow-lg p-10 rounded-xl my-10 mx-10 flex-1  dark:bg-white'>
