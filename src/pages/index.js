@@ -125,7 +125,7 @@ const handleClick=()=>{
             <li>Github</li>
             <li>Trello,Jira</li>
             <li>Postman,Swagger</li>
-            <li>Agile and Waterfall development methods</li>
+            <li>Docker and Github actions</li>
            </ul>
             </div>
            </div>
